@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vGB-Vl-LHN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee-background" translatesAutoresizingMaskIntoConstraints="NO" id="SgE-U7-kqE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <toolbar opaque="NO" alpha="0.69999999999999984" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3q0-vj-VvJ">
+                                <rect key="frame" x="0.0" y="562" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2bO-BL-ydP"/>
+                                    <barButtonItem title="Brew" id="VY0-Zu-yfP">
+                                        <connections>
+                                            <action selector="onBrewClick:" destination="BYZ-38-t0r" id="ehN-pf-x2r"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WFK-f7-sWS"/>
+                                    <barButtonItem title="Cancel" id="3y6-eW-vcT">
+                                        <connections>
+                                            <action selector="onCancelClick:" destination="BYZ-38-t0r" id="cNm-CE-cDw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8EY-RM-9TX"/>
+                                </items>
+                                <color key="tintColor" red="0.34273929180000001" green="0.37486079059999999" blue="0.39090119950000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPR-Xw-d4m">
+                                <rect key="frame" x="16" y="84" width="568" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
+                                <color key="textColor" red="0.34273929180000001" green="0.37486079059999999" blue="0.39090119950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shy-yd-DLq">
+                                <rect key="frame" x="279" y="108" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.34273929180000001" green="0.37486079059999999" blue="0.39090119950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-sW-CLt">
+                                <rect key="frame" x="16" y="137" width="568" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.34273929180000001" green="0.37486079059999999" blue="0.39090119950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynY-Yi-zGG">
+                                <rect key="frame" x="93" y="289" width="414" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.84989259949999996" green="0.91946944289999999" blue="0.94961332070000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CVG-Mn-hle" customClass="ClockView" customModule="CoffeeApp" customModuleProvider="target">
+                                <rect key="frame" x="196" y="196" width="208" height="208"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84989259949999996" green="0.91946944289999999" blue="0.94961332070000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SgE-U7-kqE" secondAttribute="bottom" id="4yc-Tk-7S0"/>
+                            <constraint firstItem="SgE-U7-kqE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="6N8-xE-X0b"/>
+                            <constraint firstAttribute="centerY" secondItem="CVG-Mn-hle" secondAttribute="centerY" id="Afv-oS-Dx1"/>
+                            <constraint firstItem="hPR-Xw-d4m" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="B3Y-Q1-YJv"/>
+                            <constraint firstItem="hPR-Xw-d4m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="G3b-WC-pP4"/>
+                            <constraint firstItem="hPR-Xw-d4m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="Iax-JU-QYU"/>
+                            <constraint firstAttribute="centerX" secondItem="CVG-Mn-hle" secondAttribute="centerX" id="LHH-K4-AQc"/>
+                            <constraint firstItem="kgN-sW-CLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MgA-kt-w3a"/>
+                            <constraint firstAttribute="centerY" secondItem="ynY-Yi-zGG" secondAttribute="centerY" id="N4v-1z-hgu"/>
+                            <constraint firstItem="kgN-sW-CLt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Qgf-Ar-8oO"/>
+                            <constraint firstAttribute="centerX" secondItem="ynY-Yi-zGG" secondAttribute="centerX" id="Tif-5C-4mW"/>
+                            <constraint firstItem="Shy-yd-DLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vfd-d7-LSn"/>
+                            <constraint firstItem="Shy-yd-DLq" firstAttribute="top" secondItem="hPR-Xw-d4m" secondAttribute="bottom" constant="-5" id="WCc-eB-EVE"/>
+                            <constraint firstItem="3q0-vj-VvJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="XiV-6F-ebi"/>
+                            <constraint firstItem="SgE-U7-kqE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="a1p-fv-DuE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Shy-yd-DLq" secondAttribute="trailing" id="fRv-FT-em1"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="3q0-vj-VvJ" secondAttribute="bottom" id="jIa-zO-Kxe"/>
+                            <constraint firstItem="kgN-sW-CLt" firstAttribute="top" secondItem="Shy-yd-DLq" secondAttribute="bottom" id="mDG-3P-2B7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SgE-U7-kqE" secondAttribute="trailing" constant="-16" id="pHc-5V-8c4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3q0-vj-VvJ" secondAttribute="trailing" constant="-16" id="sXf-ol-92V"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="QN6-5I-XfG"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="clockView" destination="CVG-Mn-hle" id="FFm-ia-LfE"/>
+                        <outlet property="currentBrewTimeLabel" destination="kgN-sW-CLt" id="WdV-sP-4tO"/>
+                        <outlet property="currentCoffeeBrandLabel" destination="hPR-Xw-d4m" id="13L-Wg-S6P"/>
+                        <outlet property="currentCoffeeNameLabel" destination="Shy-yd-DLq" id="MAf-Zf-p0f"/>
+                        <outlet property="timeSinceBrewedLabel" destination="ynY-Yi-zGG" id="Gdm-xc-YtO"/>
+                        <segue destination="9bd-Nu-PoF" kind="presentation" identifier="ShowDeviceRegistration" id="jxy-dL-rJj"/>
+                        <segue destination="LRd-I8-pCX" kind="show" identifier="ShowCoffeeList" id="HSP-cc-7Vq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="444"/>
+        </scene>
+        <!--Coffee List-->
+        <scene sceneID="YnD-DR-oIl">
+            <objects>
+                <tableViewController storyboardIdentifier="coffeeTableView" title="Coffee List" id="LRd-I8-pCX" customClass="CoffeeTableViewController" customModule="CoffeeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="KuJ-bG-VVg">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="AAf-By-8pd">
+                            <rect key="frame" x="0.0" y="64" width="600" height="148"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last coffee brewed was:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w38-ws-PH2">
+                                    <rect key="frame" x="197" y="13" width="207" height="21"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Starducks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gw-Hz-bvU">
+                                    <rect key="frame" x="8" y="47" width="584" height="21"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                    <color key="textColor" red="0.34273929180000001" green="0.37486079059999999" blue="0.39090119950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A duck in time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWi-An-By5">
+                                    <rect key="frame" x="245" y="67" width="110" height="21"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="textColor" red="0.34273929180000001" green="0.37486079059999999" blue="0.39090119950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zu7-ls-gcJ">
+                                    <rect key="frame" x="174" y="96" width="252" height="32"/>
+                                    <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <state key="normal" title="Use Last Brewed Coffee">
+                                        <color key="titleColor" red="0.96977985020000002" green="1" blue="0.87653743019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onUseLastBrewedCoffee:" destination="LRd-I8-pCX" eventType="touchUpInside" id="Rmb-vg-7u0"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.9560067289526909" green="0.97908174528320302" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="1gw-Hz-bvU" firstAttribute="leading" secondItem="AAf-By-8pd" secondAttribute="leading" id="2pb-eV-co0"/>
+                                <constraint firstAttribute="trailing" secondItem="w38-ws-PH2" secondAttribute="trailing" id="57Z-Fa-8Pw"/>
+                                <constraint firstItem="1gw-Hz-bvU" firstAttribute="top" secondItem="w38-ws-PH2" secondAttribute="bottom" constant="10" id="8Ib-Tk-fIA"/>
+                                <constraint firstAttribute="trailing" secondItem="1gw-Hz-bvU" secondAttribute="trailing" id="AGj-Wp-6VU"/>
+                                <constraint firstItem="w38-ws-PH2" firstAttribute="leading" secondItem="AAf-By-8pd" secondAttribute="leading" id="BHO-Pe-eAb"/>
+                                <constraint firstAttribute="trailing" secondItem="eWi-An-By5" secondAttribute="trailing" id="G0Z-Y9-tUV"/>
+                                <constraint firstItem="w38-ws-PH2" firstAttribute="top" secondItem="AAf-By-8pd" secondAttribute="top" constant="15" id="GRT-pY-B9p"/>
+                                <constraint firstAttribute="bottom" secondItem="zu7-ls-gcJ" secondAttribute="bottom" constant="15" id="Gu3-af-iPl"/>
+                                <constraint firstAttribute="centerY" secondItem="zu7-ls-gcJ" secondAttribute="centerY" id="H5G-sE-v1p"/>
+                                <constraint firstAttribute="centerX" secondItem="zu7-ls-gcJ" secondAttribute="centerX" id="Ie9-0w-cxH"/>
+                                <constraint firstItem="eWi-An-By5" firstAttribute="top" secondItem="w38-ws-PH2" secondAttribute="bottom" constant="35" id="OUF-Ys-oGE"/>
+                                <constraint firstItem="1gw-Hz-bvU" firstAttribute="top" secondItem="w38-ws-PH2" secondAttribute="bottom" constant="10" id="dlj-wx-gaF"/>
+                                <constraint firstItem="zu7-ls-gcJ" firstAttribute="leading" secondItem="AAf-By-8pd" secondAttribute="leading" constant="20" id="kVb-gU-Chq"/>
+                                <constraint firstItem="eWi-An-By5" firstAttribute="leading" secondItem="AAf-By-8pd" secondAttribute="leading" id="koJ-2O-Peq"/>
+                                <constraint firstAttribute="trailing" secondItem="zu7-ls-gcJ" secondAttribute="trailing" constant="20" id="wcr-VT-O6u"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="H5G-sE-v1p"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="CoffeeCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="73" id="T5l-lJ-GMs" customClass="CoffeeTableViewCell" customModule="CoffeeApp" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T5l-lJ-GMs" id="eXm-r4-EYM">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="brandId" text="Starducks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="in3-Xc-6ya">
+                                            <rect key="frame" x="8" y="15" width="584" height="26"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                            <color key="textColor" red="0.34273929175991025" green="0.37486079061882938" blue="0.3909011994949495" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="nameId" text="Dark Black Roasty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cc-fo-BhH">
+                                            <rect key="frame" x="8" y="41" width="584" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.34273929180000001" green="0.37486079059999999" blue="0.39090119950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4cc-fo-BhH" firstAttribute="trailing" secondItem="eXm-r4-EYM" secondAttribute="trailingMargin" id="28r-QX-CaJ"/>
+                                        <constraint firstItem="4cc-fo-BhH" firstAttribute="leading" secondItem="eXm-r4-EYM" secondAttribute="leadingMargin" id="8zY-H0-awT"/>
+                                        <constraint firstItem="4cc-fo-BhH" firstAttribute="top" secondItem="in3-Xc-6ya" secondAttribute="bottom" constant="3" id="QYM-EI-vsQ"/>
+                                        <constraint firstItem="in3-Xc-6ya" firstAttribute="leading" secondItem="eXm-r4-EYM" secondAttribute="leadingMargin" id="Qbg-OK-8IR"/>
+                                        <constraint firstItem="in3-Xc-6ya" firstAttribute="trailing" secondItem="eXm-r4-EYM" secondAttribute="trailingMargin" id="auJ-r8-dBN"/>
+                                        <constraint firstItem="in3-Xc-6ya" firstAttribute="top" secondItem="eXm-r4-EYM" secondAttribute="topMargin" constant="5" id="yzw-ex-qlf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.84989259949999996" green="0.91946944289999999" blue="0.94961332070000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="brandLabel" destination="in3-Xc-6ya" id="8Yj-mn-GAm"/>
+                                    <outlet property="nameLabel" destination="4cc-fo-BhH" id="ZPO-ry-00Q"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LRd-I8-pCX" id="nXk-0X-evt"/>
+                            <outlet property="delegate" destination="LRd-I8-pCX" id="QXz-zb-Fqu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Coffee List" id="w5E-b9-Arc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="C59-P3-8WG">
+                            <connections>
+                                <action selector="onShowAddCoffeeTypeView:" destination="LRd-I8-pCX" id="vhO-z1-5rr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lastBrewedBrandLabel" destination="1gw-Hz-bvU" id="wV9-z3-1TP"/>
+                        <outlet property="lastBrewedNameLabel" destination="eWi-An-By5" id="4Ij-BZ-YRk"/>
+                        <outlet property="lastBrewedView" destination="AAf-By-8pd" id="hpB-r2-Qi1"/>
+                        <segue destination="NdL-yK-fSP" kind="show" identifier="showAddCoffeeType" id="TGd-53-3Xe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6uT-Um-7UC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="UIm-WV-rrG">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="418"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="1645" y="444"/>
+        </scene>
+        <!--Add Coffee Type-->
+        <scene sceneID="sxG-wK-ZCW">
+            <objects>
+                <viewController id="NdL-yK-fSP" customClass="AddCoffeeTypeViewController" customModule="CoffeeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gvX-89-hRT"/>
+                        <viewControllerLayoutGuide type="bottom" id="NI2-LZ-mHT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Qo-gn-Za7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coffee-background" translatesAutoresizingMaskIntoConstraints="NO" id="mzO-by-wav">
+                                <rect key="frame" x="0.0" y="-6" width="600" height="632"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coffee Brand" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7R-q8-PD1">
+                                <rect key="frame" x="36" y="255" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coffee Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ogE-OO-fiD">
+                                <rect key="frame" x="36" y="295" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvR-0c-nw1">
+                                <rect key="frame" x="301" y="345" width="263" height="30"/>
+                                <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.96977985020000002" green="1" blue="0.87653743019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSubmit:" destination="NdL-yK-fSP" eventType="touchUpInside" id="Bfm-25-veF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsA-hX-gk4">
+                                <rect key="frame" x="36" y="345" width="266" height="30"/>
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.53333333329999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.96977985020000002" green="1" blue="0.87653743019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCancel:" destination="NdL-yK-fSP" eventType="touchUpInside" id="SVv-aI-Bxu"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6W-FT-0bz">
+                                <rect key="frame" x="36" y="85" width="528" height="162"/>
+                                <connections>
+                                    <outlet property="delegate" destination="NdL-yK-fSP" id="YOY-ld-mGx"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83529411760000005" green="0.90196078430000004" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mzO-by-wav" firstAttribute="top" secondItem="5Qo-gn-Za7" secondAttribute="topMargin" id="4R6-I1-i7U"/>
+                            <constraint firstItem="qvR-0c-nw1" firstAttribute="leading" secondItem="tsA-hX-gk4" secondAttribute="trailing" constant="-1" id="9ej-eO-fKw"/>
+                            <constraint firstItem="tsA-hX-gk4" firstAttribute="top" secondItem="ogE-OO-fiD" secondAttribute="bottom" constant="15" id="HFv-I2-3lP"/>
+                            <constraint firstItem="W7R-q8-PD1" firstAttribute="leading" secondItem="5Qo-gn-Za7" secondAttribute="leadingMargin" constant="20" id="HNS-gM-3Qi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="mzO-by-wav" secondAttribute="bottom" id="MUB-cV-NQn"/>
+                            <constraint firstItem="tsA-hX-gk4" firstAttribute="leading" secondItem="5Qo-gn-Za7" secondAttribute="leadingMargin" constant="20" id="PLJ-JS-wv5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t6W-FT-0bz" secondAttribute="trailing" constant="20" id="QK8-jI-EKR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qvR-0c-nw1" secondAttribute="trailing" constant="20" id="XFl-By-sgi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mzO-by-wav" secondAttribute="trailing" constant="-16" id="afu-Ks-yay"/>
+                            <constraint firstItem="t6W-FT-0bz" firstAttribute="leading" secondItem="5Qo-gn-Za7" secondAttribute="leadingMargin" constant="20" id="bBK-p6-0Nm"/>
+                            <constraint firstItem="W7R-q8-PD1" firstAttribute="top" secondItem="t6W-FT-0bz" secondAttribute="bottom" constant="10" id="eh3-Tn-Y73"/>
+                            <constraint firstItem="mzO-by-wav" firstAttribute="leading" secondItem="5Qo-gn-Za7" secondAttribute="leadingMargin" constant="-16" id="fR6-8e-HY2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ogE-OO-fiD" secondAttribute="trailing" constant="20" id="hLe-Kx-5xA"/>
+                            <constraint firstItem="t6W-FT-0bz" firstAttribute="top" secondItem="gvX-89-hRT" secondAttribute="bottom" constant="20" id="lF8-pa-W77"/>
+                            <constraint firstItem="tsA-hX-gk4" firstAttribute="width" secondItem="qvR-0c-nw1" secondAttribute="width" id="qcQ-b0-TDc"/>
+                            <constraint firstItem="ogE-OO-fiD" firstAttribute="top" secondItem="W7R-q8-PD1" secondAttribute="bottom" constant="10" id="qiG-2d-nRN"/>
+                            <constraint firstItem="ogE-OO-fiD" firstAttribute="leading" secondItem="5Qo-gn-Za7" secondAttribute="leadingMargin" constant="20" id="rqw-lZ-xrM"/>
+                            <constraint firstItem="qvR-0c-nw1" firstAttribute="top" secondItem="ogE-OO-fiD" secondAttribute="bottom" constant="15" id="s09-60-sBo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W7R-q8-PD1" secondAttribute="trailing" constant="20" id="t2J-V7-ogW"/>
+                            <constraint firstAttribute="centerY" secondItem="W7R-q8-PD1" secondAttribute="centerY" constant="50" id="zGE-2U-4Ds"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zGE-2U-4Ds"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Coffee Type" id="NGi-na-XtK">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="z8z-qo-Vpd">
+                            <connections>
+                                <action selector="onNavCancel:" destination="NdL-yK-fSP" id="Hed-9R-sPY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="brandInput" destination="W7R-q8-PD1" id="UAW-oj-N9R"/>
+                        <outlet property="nameInput" destination="ogE-OO-fiD" id="IvM-Rd-Ke0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gS8-2S-26B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2408" y="444"/>
+        </scene>
+        <!--Device Registration-->
+        <scene sceneID="nDo-Je-0y2">
+            <objects>
+                <viewController title="Device Registration" id="9bd-Nu-PoF" customClass="DeviceRegisterViewController" customModule="CoffeeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zpO-nH-Xll"/>
+                        <viewControllerLayoutGuide type="bottom" id="QVm-pA-kJ2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="99O-HK-3eO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-H5-GgA">
+                                <rect key="frame" x="40" y="284" width="521" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzA-Kh-PcK">
+                                <rect key="frame" x="40" y="172" width="521" height="104"/>
+                                <string key="text">I've noticed your device isn't added to the device list. If you want to recieve notifications, please enter a name for your device.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZ8-8m-c9Q">
+                                <rect key="frame" x="40" y="330" width="260" height="30"/>
+                                <color key="backgroundColor" red="0.87444760101010099" green="0.60926450860570636" blue="0.52828386800100735" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.96977985024608415" green="1" blue="0.87653743017081232" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelDeviceRegistration:" destination="9bd-Nu-PoF" eventType="touchUpInside" id="30x-ok-piG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TP-ex-fQl">
+                                <rect key="frame" x="299" y="330" width="262" height="30"/>
+                                <color key="backgroundColor" red="0.67984691297913713" green="0.84225063131313127" blue="0.74040335306445981" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.96977985024608415" green="1" blue="0.87653743017081232" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitDeviceRegistration:" destination="9bd-Nu-PoF" eventType="touchUpInside" id="P8G-4a-Cz2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86270046990000004" green="0.9217171717" blue="0.91240992089999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.84613879560000005" green="0.86067435820000004" blue="0.86101246840000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iZ8-8m-c9Q" firstAttribute="top" secondItem="0fb-H5-GgA" secondAttribute="bottom" constant="15" id="5zU-0R-T5g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nzA-Kh-PcK" secondAttribute="trailing" constant="20" id="7lv-8j-SVA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6TP-ex-fQl" secondAttribute="trailing" constant="20" id="J3U-T6-GEn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0fb-H5-GgA" secondAttribute="trailing" constant="20" id="LtJ-Rc-9SE"/>
+                            <constraint firstAttribute="centerY" secondItem="0fb-H5-GgA" secondAttribute="centerY" constant="40" id="UWe-0o-Lcu"/>
+                            <constraint firstItem="0fb-H5-GgA" firstAttribute="top" secondItem="nzA-Kh-PcK" secondAttribute="bottom" constant="20" id="VS8-5u-FrM"/>
+                            <constraint firstItem="iZ8-8m-c9Q" firstAttribute="width" secondItem="6TP-ex-fQl" secondAttribute="width" id="VtT-L5-jhu"/>
+                            <constraint firstItem="nzA-Kh-PcK" firstAttribute="leading" secondItem="99O-HK-3eO" secondAttribute="leadingMargin" constant="20" id="bou-88-TPc"/>
+                            <constraint firstItem="0fb-H5-GgA" firstAttribute="leading" secondItem="99O-HK-3eO" secondAttribute="leadingMargin" constant="20" id="cfr-b3-2S9"/>
+                            <constraint firstItem="iZ8-8m-c9Q" firstAttribute="leading" secondItem="99O-HK-3eO" secondAttribute="leadingMargin" constant="20" id="dha-Db-PKw"/>
+                            <constraint firstItem="6TP-ex-fQl" firstAttribute="top" secondItem="0fb-H5-GgA" secondAttribute="bottom" constant="15" id="e9c-pE-iO2"/>
+                            <constraint firstItem="6TP-ex-fQl" firstAttribute="leading" secondItem="iZ8-8m-c9Q" secondAttribute="trailing" constant="-3" id="trz-c2-7iI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deviceName" destination="0fb-H5-GgA" id="evP-lY-Xkz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qD-IK-SHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="1207"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZeW-hR-sel">
+            <objects>
+                <navigationController id="vGB-Vl-LHN" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gy1-oI-f1D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="c30-Pl-ALB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kG6-UY-Bbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="444"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coffee-background" width="414" height="736"/>
+    </resources>
+</document>
